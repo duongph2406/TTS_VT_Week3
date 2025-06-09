@@ -39,7 +39,7 @@
     left: 0;
   }
   
-  .left>.text-content {
+  .left .text-content {
     position: absolute;
     bottom: 100px;
     left: 25%;
@@ -53,7 +53,7 @@
   }
   
   
-  .left-side .text-content p {
+  .left .text-content p {
     color: #5680F9;
     margin-top: 10px;
   }
