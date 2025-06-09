@@ -39,14 +39,14 @@
     left: 0;
   }
   
-  .left-side>.text-content {
+  .left>.text-content {
     position: absolute;
     bottom: 100px;
     left: 25%;
     text-align: center;
   }
   
-  .left-side .text-content h2 {
+  .left .text-content h2 {
     color: #5680F9;
     margin-top: 10px;
     font-size: 24px;
@@ -96,26 +96,26 @@
     cursor: pointer;
   }
   
-  .right-side .languages-selector .dropdown-icon {
+  .right .languages-selector .dropdown-icon {
     width: 10px;
     height: 5px;
     margin: auto;
   }
   
-  .right-side .languages-selector .language-icon {
+  .right .languages-selector .language-icon {
     width: 13px;
     height: 13px;
     margin: auto;
   }
   
-  .right-side .languages-selector .language {
+  .right .languages-selector .language {
     margin: 10px;
     font-size: 14px;
     font-size: 12px;
   
   }
   
-  .right-side .login-form {
+  .right .login-form {
     width: 400px;
     height: 450px;
     padding: 20px;
