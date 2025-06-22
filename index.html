@@ -33,21 +33,30 @@
       <div class="login-form">
         <img src="img/vss-logo.png" alt="Logo" class="logo" />
         <h3>Đăng nhập vào tài khoản của bạn</h3>
-        <form action="#" method="post">
-          <input type="text" placeholder="Nhập tài khoản" required>
-          <input type="password" placeholder="Nhập mật khẩu" required>
+        
+        <!-- Error message display -->
+        <div id="error-message" class="error-message" style="display: none;"></div>
+        
+        <form id="login-form" action="#" method="post">
+          <input type="email" id="email" placeholder="Nhập tài khoản email" required>
+          
+          <div class="password-container">
+            <input type="password" id="password" placeholder="Nhập mật khẩu" required>
+            <button type="button" id="toggle-password" class="toggle-password">👁️</button>
+          </div>
 
           <div class="options">
             <label><input type="checkbox" class="checkbox-options"> Lưu mật khẩu</label>
             <a href="#">Quên mật khẩu?</a>
           </div>
-          <button type="submit">Đăng nhập</button>
+          <button type="submit" id="login-btn">Đăng nhập</button>
           <p class="register-text">Bạn chưa có tài khoản? <a href="#">Đăng ký</a></p>
         </form>
       </div>
     </div>
   </div>
-  </div>
+
+  <script src="script/login.js"></script>
 </body>
 
 </html>
