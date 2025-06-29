@@ -169,38 +169,7 @@
     </div>
   </div>
 
-  <script>
-    // Check if user is logged in (simple check)
-    if (!document.referrer.includes('index.html') && !sessionStorage.getItem('loggedIn')) {
-      // Redirect to login if not coming from login page
-      window.location.href = 'index.html';
-    }
-
-    // Set logged in status
-    sessionStorage.setItem('loggedIn', 'true');
-
-    function logout() {
-      // Clear session
-      sessionStorage.removeItem('loggedIn');
-      
-      // Show logout message
-      if (confirm('Bạn có chắc chắn muốn đăng xuất?')) {
-        alert('Đăng xuất thành công!');
-        window.location.href = 'index.html';
-      }
-    }
-
-    // Display current time
-    function updateTime() {
-      const now = new Date();
-      const timeString = now.toLocaleString('vi-VN');
-      document.title = `Dashboard - ${timeString}`;
-    }
-
-    // Update time every second
-    setInterval(updateTime, 1000);
-    updateTime();
-  </script>
+  <script src="dist/dashboard.js"></script>
 </body>
 
 </html> 
